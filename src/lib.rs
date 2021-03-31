@@ -1,4 +1,8 @@
-//! Tiny macro for calling functions with `Option<T>` arguments.
+//! [![crates.io](https://meritbadge.herokuapp.com/turbonone)](https://crates.io/crates/turbonone)
+//! [![docs.rs](https://docs.rs/turbonone/badge.svg)](https://docs.rs/turbonone/)
+//! [![license](https://img.shields.io/crates/l/turbonone)](https://github.com/WilliamVenner/turbonone/blob/master/LICENSE)
+//!
+//! Tiny macro for calling functions with generic `Option<T>` arguments.
 //!
 //! ## The Problem
 //!
