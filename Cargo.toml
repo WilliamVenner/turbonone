@@ -1,6 +1,6 @@
 [package]
 name = "turbonone"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["William Venner <william@venner.io>"]
 description = "Tiny macro for calling functions with Option<T> arguments"
 license = "MIT"
