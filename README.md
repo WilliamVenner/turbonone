@@ -6,6 +6,15 @@
 
 Tiny macro for calling functions with generic `Option<T>` arguments.
 
+## Usage
+
+Add to your [Cargo.toml](https://doc.rust-lang.org/cargo/reference/manifest.html) file:
+
+```toml
+[dependencies]
+turbonone = "0.*"
+```
+
 ## The Problem
 
 ```rust
