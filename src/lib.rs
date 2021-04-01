@@ -35,10 +35,10 @@
 //! my_function(Some("An argument")); // Works!
 //!
 //! my_box_function(None); // cannot infer type for type parameter `T` declared on the associated function `my_box_function`
-//! my_box_function(Some("An argument")); // Works!
+//! my_box_function(Some(Box::new("An argument"))); // Works!
 //!
 //! my_complex_function(None); // cannot infer type for type parameter `T` declared on the associated function `my_complex_function`
-//! my_complex_function(Some("An argument")); // Works!
+//! my_complex_function(Some(Arc::new(Box::new("An argument")))); // Works!
 //! ```
 //!
 //! ## The Solution
@@ -48,6 +48,7 @@
 //! # extern crate turbonone;
 //! # #[macro_use]
 //! use turbonone::turbonone;
+//! # use std::sync::Arc;
 //!
 //! fn my_function<T>(arg: Option<T>) -> &'static str {
 //!     "Works!"
@@ -66,10 +67,10 @@
 //!
 //! my_box_function(turbonone!(Box)); // Works!
 //! my_box_function(turbonone!(Box<()>)); // Works!
-//! my_box_function(Some("An argument")); // Works!
+//! my_box_function(Some(Box::new("An argument"))); // Works!
 //!
 //! my_complex_function(turbonone!(Arc<Box<()>>)); // Works!
-//! my_complex_function(Some("An argument")); // Works!
+//! my_complex_function(Some(Arc::new(Box::new("An argument")))); // Works!
 //! ```
 
 #![no_std]
