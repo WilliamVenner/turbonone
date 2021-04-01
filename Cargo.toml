@@ -3,7 +3,7 @@ name = "turbonone"
 version = "0.1.3"
 authors = ["William Venner <william@venner.io>"]
 description = "Tiny macro for calling functions with Option<T> arguments"
-license = "MIT"
+license = "MIT OR Apache-2.0"
 
 repository = "https://github.com/WilliamVenner/turbonone"
 readme = "README.md"
