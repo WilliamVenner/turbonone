@@ -1,11 +1,14 @@
 [package]
 name = "turbonone"
-version = "0.1.3"
+version = "0.2.0"
 authors = ["William Venner <william@venner.io>"]
-description = "Tiny macro for calling functions with Option<T> arguments"
+description = "Simple macro for calling functions with Option<T> arguments"
 license = "MIT OR Apache-2.0"
 
 repository = "https://github.com/WilliamVenner/turbonone"
 readme = "README.md"
 keywords = ["turbofish", "utility", "syntax", "macro", "sugar"]
 categories = ["rust-patterns", "no-std", "development-tools"]
+
+[lib]
+proc-macro = true
