@@ -43,11 +43,7 @@ my_complex_function(Some(Arc::new(Box::new("An argument")))); // Works!
 ## The Solution
 
 ```rust
-// Rust 2015
 #[macro_use] extern crate turbonone;
-
-// Rust 2018
-use turbonone::turbonone;
 
 fn my_function<T>(arg: Option<T>) -> &'static str {
     "Works!"

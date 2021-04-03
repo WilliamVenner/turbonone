@@ -45,9 +45,7 @@
 //!
 //! ```rust
 //! # extern crate core;
-//! # extern crate turbonone;
-//! # #[macro_use]
-//! use turbonone::turbonone;
+//! #[macro_use] extern crate turbonone;
 //! # use std::sync::Arc;
 //!
 //! fn my_function<T>(arg: Option<T>) -> &'static str {
